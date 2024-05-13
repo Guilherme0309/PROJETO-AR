@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+
+function senai() {
+        var inicio = document.Form1.Ftimei.value;
+        var fim = document.Form1.Ftimef.value;
+        
+    
+        alert("Hora de início: " + inicio + "\nHora de fim: " + fim);
+        
+        return false;
+    }
+
+</script>
+
+</head>
+<body>
+    <a href='http://127.0.0.1:5500/paginas/principal.html'> <img src='../img/voltar.png' width='5%''></a>
+    <br><br>
+    <font face='arial' size='6'>
+    <center><b> HORARIO DE <br> FUNCIONAMENTO </b></center>
+
+    <br><br><br>
+
+    <form name="Form1" action="" method="post" onsubmit="return senai()">
+    
+    <center>
+        <font size="4">
+        INICIO:
+    <input type="time" name="Ftimei">
+    <br>
+    FIM:
+    <input type="time" name="Ftimef">
+    <br><br>
+    <input type="submit" value="GRAVAR">
+    </form>
+</body>
+</html>
